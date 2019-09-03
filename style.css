@@ -11,16 +11,11 @@ body {
     width: 100%;
 }
 
-#main {
-    height: 100%;
-    display: flex;
-}
-
 #name-title {
     float: right;
     color: white;
-    height: 100%;
-    margin: 30px;
+    height: 70px;
+    margin: 30px 30px 0 0;
 }
 
 #name {
@@ -31,16 +26,42 @@ body {
     text-align: right; 
 }
 
+#main {
+    display: flex;
+}
+
 #resume-content {
     background: #333333;
-    height: 100%;
-    flex-grow: 2;
+    flex-grow: 30;
+    padding: 10px 0 0 10px;
 }
 
 #persona-panel {
-    float: right;
-    height: 100%;
-    flex-grow: 1;
+    flex-grow: 10;
+}
+
+#contact-info {
+    margin: 20px;
+    background: #333333;
+}
+
+#skills {
+    margin: 20px;
+    background: #333333;
+}
+
+#self-image {
+    background: #fff;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    display: flex;
 }
 
 .section-title {
@@ -51,7 +72,7 @@ body {
 
 .line {
     height: 0;
-    margin: 3px;
+    margin: 13px;
     border: 1px solid #636363;
-    display: inline-block;
+    flex-grow: 1;
 }
