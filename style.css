@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+    font-family: "Arial";
+    height: 100vh;
 }
 
 #header {
@@ -28,46 +30,40 @@ body {
 
 #main {
     display: flex;
+    height: 100%;
 }
 
 #resume-content {
     background: #333333;
+    height: 100%;
     flex-grow: 30;
-    padding: 10px 0 0 10px;
+    padding: 20px 0 0 20px;
 }
 
 #persona-panel {
     flex-grow: 10;
 }
 
-#contact-info {
+.side-panel-section {
     margin: 20px;
-    background: #333333;
-}
-
-#skills {
-    margin: 20px;
+    padding: 20px;
     background: #333333;
 }
 
 #self-image {
-    background: #fff;
+    background-image: url('./me.JPG');
     height: 250px;
     width: 250px;
     border-radius: 250px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.section {
-    display: flex;
 }
 
 .section-title {
     color: #34a4eb;
     font-size: 18pt;
-    display: inline-block;
+    display: flex;
 }
 
 .line {
@@ -75,4 +71,64 @@ body {
     margin: 13px;
     border: 1px solid #636363;
     flex-grow: 1;
+}
+
+.contact-link {
+    padding: 3px;
+}
+
+#dashed-list {
+    margin-left: 1em;
+}
+
+.text-small {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+ul li {
+    font-weight: 400;
+}
+
+ul.dash {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+ul.dash > li:before {
+    display: block;
+    float: left;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+em {
+    font-weight: 400;
+}
+
+a {
+    padding-top: 3px;
+    color: white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
 }
