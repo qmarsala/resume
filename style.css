@@ -1,0 +1,57 @@
+body {
+    background: #252526;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#header {
+    background: #34a4eb;
+    height: 100px;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+}
+
+#name-title {
+    float: right;
+    color: white;
+    height: 100%;
+    margin: 30px;
+}
+
+#name {
+    font-size: 24pt;
+}
+
+#title {
+    text-align: right; 
+}
+
+#resume-content {
+    background: #333333;
+    height: 100%;
+    flex-grow: 2;
+}
+
+#persona-panel {
+    float: right;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.section-title {
+    color: #34a4eb;
+    font-size: 18pt;
+    display: inline-block;
+}
+
+.line {
+    height: 0;
+    margin: 3px;
+    border: 1px solid #636363;
+    display: inline-block;
+}
