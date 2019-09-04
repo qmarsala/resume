@@ -37,7 +37,7 @@ body {
     background: #333333;
     height: 100%;
     flex-grow: 30;
-    padding: 20px 0 0 20px;
+    padding: 20px;
 }
 
 #persona-panel {
@@ -81,9 +81,10 @@ body {
     margin-left: 1em;
 }
 
-.text-small {
+.sub-text {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
+    margin-top: -10px;
 }
 
 ul li {
@@ -131,4 +132,21 @@ a:hover {
 a:active {
     color: white;
     text-decoration: underline;
+}
+
+.project {
+    padding-bottom: 10px;
+}
+
+.project-title {
+    font-size: 12pt;
+}
+
+.project-description {
+    margin-top: -5px;
+    font-size: 10pt;
+}
+
+.job-title {
+    padding-bottom: 10px;
 }
