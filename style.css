@@ -50,6 +50,10 @@ body {
     background: #333333;
 }
 
+#skills {
+    font-size: 14pt;
+}
+
 #self-image {
     background-image: url('./me.JPG');
     height: 250px;
