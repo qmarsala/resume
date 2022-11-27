@@ -232,8 +232,8 @@
                 <div class="section-title">
                     Skills
                 </div>
-                <ul class="dash">
-                    <li>C#</li>
+                <ul id="skills-list" class="dash">
+                    <!-- <li>C#</li>
                     <li>AutoHotKey</li>
                     <li>TypeScript</li>
                     <li>JavaScript</li>
@@ -258,7 +258,7 @@
                     <li>GitHub Actions</li>
                     <li>Object Oriented Programming</li>
                     <li>Design Patterns</li>
-                    <li>Functional Programming</li>
+                    <li>Functional Programming</li> -->
                 </ul>
             </div>
         </div>
@@ -267,7 +267,14 @@
 <script>
     const response = fetch('data.json')
         .then(r => r.json())
-        .then(v => console.log(JSON.stringify(v)));
+        .then(v => {
+            v.skills.forEach(s => {
+                const skillsList = document.getElementById("skills-list");
+                const li = document.createElement("li");
+                li.textContent = s;
+                skillsList.appendChild(li);
+            });
+        });
 </script>
 
 </html>
