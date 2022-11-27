@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>qmarsala | resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="header">
         <div id="name-title">
@@ -44,10 +46,12 @@
                                     Researched and Designed POC's using new technologies and patterns
                                 </li>
                                 <li>
-                                    Developed shared libraries to improve the productivity of the developers on various teams
+                                    Developed shared libraries to improve the productivity of the developers on various
+                                    teams
                                 </li>
                                 <li>
-                                    Developed dotnet templates to improve the speed and consistency of beginning a new project
+                                    Developed dotnet templates to improve the speed and consistency of beginning a new
+                                    project
                                 </li>
                                 <li>
                                     Assisted in the development of a ci/cd pipeline built on GitHub Actions
@@ -60,10 +64,12 @@
                         <div class="project-description dashed-list">
                             <ul class="dash">
                                 <li>
-                                    Assisting with the design and implementation of the subscriptions platform utilizing Kafka
+                                    Assisting with the design and implementation of the subscriptions platform utilizing
+                                    Kafka
                                 </li>
                                 <li>
-                                    Assisting with the design and implementation of the digital entitlements platform utilizing Neo4j
+                                    Assisting with the design and implementation of the digital entitlements platform
+                                    utilizing Neo4j
                                 </li>
                             </ul>
                         </div>
@@ -80,7 +86,8 @@
                                     Implemented custom cdn for cricut images using aws lambda edge functions and s3
                                 </li>
                                 <li>
-                                    Helped make improvements to the taxonomy system that categorizes the content within Design Space
+                                    Helped make improvements to the taxonomy system that categorizes the content within
+                                    Design Space
                                 </li>
                             </ul>
                         </div>
@@ -162,7 +169,8 @@
                             <ul class="dash">
                                 <li>Maintained and implemented new features in a system that funded new leases.</li>
                                 <li>
-                                    Reduced ~100 hours of work per day for accounting and increased the scalability of the product by
+                                    Reduced ~100 hours of work per day for accounting and increased the scalability of
+                                    the product by
                                     automatically reviewing the signed lease agreement and initiating store
                                     payment procedures.
                                 </li>
@@ -256,5 +264,10 @@
         </div>
     </div>
 </body>
+<script>
+    const response = fetch('data.json')
+        .then(r => r.json())
+        .then(v => console.log(JSON.stringify(v)));
+</script>
 
 </html>
