@@ -8,38 +8,42 @@ const createList = (items) => {
     return wrapper;
 }
 
+const createLink = (name, url, target = '') => {
+    const html = `
+    <div class='contact-link'>
+        <a target='${target}' href='${url}'>${name}</a>
+    </div>  
+    `;
+    return html;
+}
+
+const formatPhoneNumber = (numberString) => {
+    const countryCode = numberString[0];
+    const areaCode = numberString.slice(1, 4);
+    const firstThree = numberString.slice(4, 7);
+    const lastFour = numberString.slice(7);
+    return `${countryCode} (${areaCode}) ${firstThree}-${lastFour}`;
+};
+
+const renderLinks = (links) => {
+    const linkDivs = [];
+    links.forEach(l => {
+        linkDivs.push(createLink(l.name, l.url));
+    });
+    return linkDivs.join('');
+};
+
 const renderContact = (contact) => {
-    const formatPhoneNumber = (numberString) => {
-        const countryCode = numberString[0];
-        const areaCode = numberString.slice(1, 4);
-        const firstThree = numberString.slice(4, 7);
-        const lastFour = numberString.slice(7);
-        return `${countryCode} (${areaCode}) ${firstThree}-${lastFour}`;
-    };
-    const renderLinks = (links) => {
-        const linkDivs = [];
-        links.forEach(l => {
-            linkDivs.push(`
-            <div class='contact-link'>
-                <a target='_blank' href='${l.url}'>${l.name}</a>
-            </div>
-            `);
-        });
-        return linkDivs.join('');
-    };
     const linksHtml = renderLinks(contact.links);
-    const prettyPhone = formatPhoneNumber(contact.phone);
+    const emailLink = createLink(contact.email, `mailto:${contact.email}`);
+    const phoneLink = createLink(formatPhoneNumber(contact.phone), `tel:${contact.phone}`);
     const html = `
     <div id='contact-info' class='side-panel-section'>
         <div class='section-title'>
             Contact
         </div>
-        <div class='contact-link'>
-            <a href='mailto:${contact.email}'>${contact.email}</a>
-        </div>
-        <div class='contact-link'>
-            <a href='tel:${contact.phone}'>${prettyPhone}</a>
-        </div>
+        ${emailLink}
+        ${phoneLink}
         <hr />
         ${linksHtml}
     </div>
