@@ -31,13 +31,13 @@
     "experience": [
         {
             "company": "Cricut, Inc",
-            "position": "Software Engineering Enablement",
+            "position": "Sr. Software Engineer, Enablement",
             "date": "June 2020 - Present",
             "projects": [
                 {
                     "title": "Enablement",
                     "description": [
-                        "Researched and Designed POC's using new technologies and patterns",
+                        "Researched and designed POC's using new technologies and patterns, such as: Kafka, and graph databases",
                         "Developed shared libraries to improve the productivity of the developers on various teams",
                         "Developed dotnet templates to improve the speed and consistency of beginning a new project",
                         "Assisted in the development of a ci/cd pipeline built on GitHub Actions"
@@ -60,7 +60,7 @@
                 {
                     "title": "Enablement",
                     "description": [
-                        "Implemented custom cdn for cricut images using aws lambda edge functions and s3",
+                        "Implemented custom cdn for cricut images using AWS Lambda@Edge functions and S3",
                         "Helped make improvements to the taxonomy system that categorizes the content within Design Space"
                     ]
                 }
