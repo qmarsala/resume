@@ -1,5 +1,6 @@
 import { renderAboutMe } from './sections/aboutme.js'
 import { renderExperience } from './sections/experience.js'
+import { renderEducation } from './sections/education.js'
 import { renderContact } from './sections/contact.js'
 import { renderSkills } from './sections/skills.js'
 
