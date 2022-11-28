@@ -7,7 +7,7 @@ import { renderSkills } from './sections/skills.js'
 const renderResume = (data) => {
     const aboutmeHtml = renderAboutMe(data.aboutme);
     const experienceHtml = renderExperience(data.experience);
-    const educationHtml = renderEducation(data.experience);
+    const educationHtml = renderEducation(data.education);
     const contactHtml = renderContact(data.contact);
     const skillsHtml = renderSkills(data.skills);
     const html = `
