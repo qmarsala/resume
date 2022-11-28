@@ -58,9 +58,9 @@
             "date": "October 2019 - June 2020",
             "projects": [
                 {
-                    "title": "Enablement",
+                    "title": "Community",
                     "description": [
-                        "Implemented custom cdn for cricut images using AWS Lambda@Edge functions and S3",
+                        "Implemented custom cdn for cricut images using AWS Lambda@Edge and S3",
                         "Helped make improvements to the taxonomy system that categorizes the content within Design Space"
                     ]
                 }
