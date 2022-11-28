@@ -7,6 +7,19 @@ export const createSectionTitle = (title) => {
     return html;
 }
 
+export const createSection = (title, content) => {
+    const titleHtml = createSectionTitle(title);
+    const html = `
+    <div class='section'>
+        ${titleHtml}
+        <div class='section-content'>
+            ${content}
+        </div>
+    </div>
+    `;
+    return html;
+}
+
 export const createList = (items) => {
     const lis = [];
     items.forEach(i => {
