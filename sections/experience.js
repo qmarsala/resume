@@ -1,4 +1,4 @@
-import { createList } from "../components.js";
+import { createList, createSectionTitle } from "../components.js";
 
 const createProject = (title, description) => {
     const descriptionHtml = createList(description);
@@ -28,7 +28,7 @@ const createProjects = (company, position, date, projects) => {
 }
 
 export const renderExperience = (experience) => {
-    const sectionTitle = 'Experience';
+    const sectionTitle = createSectionTitle('Experience');
     const jobsHtml = [];
     experience.forEach(e => {
         const jobHtml = createProjects(e.company, e.position, e.date, e.projects);
