@@ -16,7 +16,7 @@
             <div id="title">Software Engineer - Spokane, WA</div>
         </div>
     </div>
-    <div id="main">
+    <div id="resume">
         <div id="resume-content">
             <div class="section">
                 <div class="section-title">
@@ -232,35 +232,37 @@
                 <div class="section-title">
                     Skills
                 </div>
-                <div id="skills-list"></div>
+                <ul class="dash">
+                    <li>C#</li>
+                    <li>AutoHotKey</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                    <li>Bash</li>
+                    <li>PowerShell</li>
+                    <li>.NET</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Restful API’s</li>
+                    <li>Visual Studio</li>
+                    <li>VS Code</li>
+                    <li>MSSQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Kafka</li>
+                    <li>Neo4j</li>
+                    <li>Redis</li>
+                    <li>.git</li>
+                    <li>GitHub Actions</li>
+                    <li>Object Oriented Programming</li>
+                    <li>Design Patterns</li>
+                    <li>Functional Programming</li>
+                </ul>
             </div>
         </div>
     </div>
 </body>
-<script>
-    const createList = (items) => {
-        const listElWrapper = document.createElement("div");
-        listElWrapper.classList.add("dashed-list");
-
-        const listEl = document.createElement("ul");
-        listEl.classList.add("dash");
-        listElWrapper.appendChild(listEl);
-
-        items.forEach(i => {
-            const li = document.createElement("li");
-            li.textContent = i;
-            listEl.appendChild(li);
-        });
-        return listElWrapper;
-    }
-    const response = fetch('data.json')
-        .then(r => r.json())
-        .then(v => {
-            const skillsList = createList(v.skills);
-            document
-                .getElementById("skills-list")
-                .appendChild(skillsList);
-        });
-</script>
 
 </html>
