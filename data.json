@@ -149,8 +149,10 @@
         "Kafka",
         "Neo4j",
         "Redis",
-        ".git",
+        "Git",
         "GitHub Actions",
+        "Test Driven Development",
+        "CI/CD",
         "Object Oriented Programming",
         "Design Patterns",
         "Functional Programming"
