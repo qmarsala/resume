@@ -25,7 +25,7 @@ body {
 }
 
 #title {
-    text-align: right; 
+    text-align: right;
 }
 
 #resume {
@@ -101,7 +101,7 @@ ul.dash {
     padding-left: 1em;
 }
 
-ul.dash > li:before {
+ul.dash>li:before {
     display: block;
     float: left;
     content: "-";
@@ -116,6 +116,12 @@ em {
 a {
     padding-top: 3px;
     color: white;
+}
+
+@media print {
+    a:after {
+        content: "(" attr(href)")";
+    }
 }
 
 a:link {
