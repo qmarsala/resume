@@ -19,6 +19,7 @@
     },
     "aboutme": [
         "I enjoy helping people by solving problems with technology and creating something new.",
+        "I value team work, over individual contributions, and prefer to work in a highly collaborative environment.",
         "In my free time, I enjoy golfing, video games, and even more programming."
     ],
     "education": [
@@ -37,7 +38,7 @@
                 {
                     "title": "Language Assessments",
                     "description": [
-                        "Participated in mob programming to desing and implement new features for the language assesment platform"
+                        "Participated in mob programming to design and implement new features for the language assessment platform"
                     ]
                 }
             ]
@@ -45,7 +46,7 @@
         {
             "company": "Cricut, Inc",
             "position": "Sr. Software Engineer, Enablement",
-            "date": "June 2020 - Februrary 2023",
+            "date": "June 2020 - February 2023",
             "projects": [
                 {
                     "title": "Enablement",
@@ -73,7 +74,7 @@
                 {
                     "title": "Community",
                     "description": [
-                        "Implemented custom cdn for cricut images using AWS Lambda@Edge and S3",
+                        "Implemented custom cdn for Cricut images using AWS Lambda@Edge and S3",
                         "Helped make improvements to the taxonomy system that categorizes the content within Design Space"
                     ]
                 }
