@@ -30,9 +30,22 @@
     ],
     "experience": [
         {
+            "company": "Emmersion",
+            "position": "Sr. Software Engineer",
+            "date": "February 2023 - May 2023",
+            "projects": [
+                {
+                    "title": "Language Assessments",
+                    "description": [
+                        "Participated in mob programming to desing and implement new features for the language assesment platform"
+                    ]
+                }
+            ]
+        },
+        {
             "company": "Cricut, Inc",
             "position": "Sr. Software Engineer, Enablement",
-            "date": "June 2020 - Present",
+            "date": "June 2020 - Februrary 2023",
             "projects": [
                 {
                     "title": "Enablement",
