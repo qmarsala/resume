@@ -28,11 +28,8 @@ const createProjects = (company, position, date, projects) => {
 }
 
 export const renderExperience = (experience) => {
-    const jobsHtml = [];
-    experience.forEach(e => {
-        const jobHtml = createProjects(e.company, e.position, e.date, e.projects);
-        jobsHtml.push(jobHtml);
-    });
+    const jobsHtml = experience.map(e => 
+        createProjects(e.company, e.position, e.date, e.projects));
     const html = createSection('Experience', jobsHtml.join(''));
     return html;
 }

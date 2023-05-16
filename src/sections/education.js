@@ -6,11 +6,8 @@ const createEducationItem = (educationAuthority, degreeOrCertificate, date) => {
 }
 
 export const renderEducation = (education) => {
-    const educationItems = [];
-    education.forEach(e => {
-        const educationItem = createEducationItem(e.educationAuthority, e.degreeOrCertificate, e.date);
-        educationItems.push(educationItem);
-    });
+    const educationItems = education.map(e => 
+        createEducationItem(e.educationAuthority, e.degreeOrCertificate, e.date));
     const html = createSection('Education', educationItems.join(''));
     return html;
 }

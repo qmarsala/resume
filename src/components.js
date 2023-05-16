@@ -21,10 +21,7 @@ export const createSection = (title, content) => {
 }
 
 export const createList = (items) => {
-    const lis = [];
-    items.forEach(i => {
-        lis.push(`<li>${i}</li>`)
-    });
+    const lis = items.map(i => `<li>${i}</li>`);
     const listEl = `<ul class='dash'>${lis.join('')}</ul>`;
     const wrapper = `<div class='dashed-list'>${listEl}</div>`;
     return wrapper;
