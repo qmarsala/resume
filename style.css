@@ -120,7 +120,7 @@ a {
 
 a:link {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -129,7 +129,7 @@ a:visited {
 }
 
 a:hover {
-    color: white;
+    color: #34a4eb;
     text-decoration: underline;
 }
 
