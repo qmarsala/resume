@@ -43,4 +43,13 @@ const buildResume = () => {
         });
 }
 
+const addGitHubHotKeyHandler = () => {
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Decimal') {
+            window.location.href = 'https://github.com/qmarsala/resume';
+        }
+    });
+}
+
 buildResume();
+addGitHubHotKeyHandler();
