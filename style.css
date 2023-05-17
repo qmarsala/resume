@@ -81,6 +81,10 @@ body {
     padding: 3px;
 }
 
+.contact-link-text {
+    display: none;
+}
+
 #dashed-list {
     margin-left: 1em;
 }
@@ -119,8 +123,13 @@ a {
 }
 
 @media print {
-    a:after {
-        content: "(" attr(href)")";
+    .contact-link {
+        display: none;
+    }
+
+    .contact-link-text {
+        padding: 3px;
+        display: inline;
     }
 }
 

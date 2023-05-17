@@ -10,6 +10,9 @@ const formatPhoneNumber = (numberString) => {
 
 const createLink = (name, url, target = '') => {
     const html = `
+    <div class='contact-link-text'>
+       ${url.replace('mailto:', '').replace('tel:', '')}
+    </div>  
     <div class='contact-link'>
         <a target='${target}' href='${url}'>${name}</a>
     </div>  
@@ -28,7 +31,7 @@ const createLinks = (links) => {
 export const renderContact = (contact) => {
     const sectionTitle = createSectionTitle('Contact');
     const contactLinks = [
-        { name: contact.email, url: `mailto:${contact.email}`, },
+        { name: contact.email, url: `mailto:${contact.email}` },
         { name: formatPhoneNumber(contact.phone), url: `tel:${contact.phone}` },
         ...contact.links
     ]
