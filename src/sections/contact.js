@@ -8,13 +8,16 @@ const formatPhoneNumber = (numberString) => {
     return `${countryCode} (${areaCode}) ${firstThree}-${lastFour}`;
 };
 
-const createLink = (name, url, target = '') => {
-    const html = `
+const createLink = (name, url, hideOnPrint, target = '') => {
+    const printText = `
     <div class='contact-link-text'>
-       ${url.replace('mailto:', '').replace('tel:', '')}
-    </div>  
+        ${url.replace('mailto:', '').replace('tel:', '')}
+    </div> 
+    `;
+    const html = `
+    ${hideOnPrint ? '' : printText}
     <div class='contact-link'>
-        <a target='${target}' href='${url}'>${name}</a>
+        <a target='${target}' href='${url}'><i class='link-icon'></i>${name}</a>
     </div>  
     `;
     return html;
@@ -23,7 +26,7 @@ const createLink = (name, url, target = '') => {
 const createLinks = (links) => {
     const linkDivs = [];
     links.forEach(l => {
-        linkDivs.push(createLink(l.name, l.url));
+        linkDivs.push(createLink(l.name, l.url, l.hideOnPrint));
     });
     return linkDivs.join('');
 };

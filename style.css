@@ -133,9 +133,19 @@ a {
     }
 }
 
+.link-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 2px;
+    color: white;
+    content: url('./link.svg');
+}
+
 a:link {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
@@ -145,12 +155,12 @@ a:visited {
 
 a:hover {
     color: #34a4eb;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .project {
