@@ -24,7 +24,7 @@
     },
     "aboutme": [
         "I enjoy helping people by solving problems with technology and creating something new.",
-        "I value team work, over individual contributions, and prefer to work in a highly collaborative environment.",
+        "I value team work over individual contributions, and prefer to work in a highly collaborative environment.",
         "In my free time, I enjoy golfing, video games, and even more programming."
     ],
     "education": [
@@ -56,7 +56,7 @@
                 {
                     "title": "Enablement",
                     "description": [
-                        "Researched and designed POC's using new technologies and patterns, such as: Kafka, and graph databases",
+                        "Researched and designed POC's using new technologies and patterns such as Kafka and graph databases",
                         "Developed shared libraries to improve the productivity of the developers on various teams",
                         "Developed dotnet templates to improve the speed and consistency of beginning a new project",
                         "Assisted in the development of a ci/cd pipeline built on GitHub Actions"
@@ -93,10 +93,10 @@
                 {
                     "title": "Checkout Platform",
                     "description": [
-                        "Designed, implemented, and maintained a platform for customers to sign their lease agreement, and collect their initial lease payment.",
-                        "Improved performance of the document creation process by reducing the memory footprint by 50%.",
-                        "Reduced time to create the lease agreement document from 10+ seconds to an average of 3.",
-                        "Improved insight into our production application by implementing Google Analytics."
+                        "Designed, implemented, and maintained a platform for customers to sign their lease agreement and collect their initial lease payment",
+                        "Improved performance of the document creation process by reducing the memory footprint by 50%",
+                        "Reduced time to create the lease agreement document from 10+ seconds to an average of 3",
+                        "Improved insight into our production application by implementing Google Analytics"
                     ]
                 }
             ]
@@ -109,24 +109,24 @@
                 {
                     "title": "Electronic Store Payment Platform",
                     "description": [
-                        "Designed and implemented a system to pay integrated stores for leased merchandise.",
-                        "Reduced hours of work for accounting by allowing them to set up automatic payments to merchants.",
-                        "Improved accounting's insight into merchant payments by providing searchable dashboards to quickly review payments being made to our merchants."
+                        "Designed and implemented a system to pay integrated stores for leased merchandise",
+                        "Reduced hours of work for accounting by allowing them to set up automatic payments to merchants",
+                        "Improved accounting's insight into merchant payments by providing searchable dashboards to quickly review payments being made to our merchants"
                     ]
                 },
                 {
                     "title": "Virtual Payment Platform",
                     "description": [
-                        "Designed and implemented a system to pay stores in real time for leased merchandise allowing Progressive to do business with more big box retailers.",
-                        "Provided a scalable way to set up pilots with new merchants by generating virtual credit cards to be used for purchasing the merchandise for the customer.",
-                        "Coordinated integration efforts with third party provider."
+                        "Designed and implemented a system to pay stores in real time for leased merchandise allowing Progressive to do business with more big box retailers",
+                        "Provided a scalable way to set up pilots with new merchants by generating virtual credit cards to be used for purchasing the merchandise for the customer",
+                        "Coordinated integration efforts with third party provider"
                     ]
                 },
                 {
                     "title": "Automatic Lease Funding",
                     "description": [
-                        "Maintained and implemented new features in a system that funded new leases.",
-                        "Reduced ~100 hours of work per day for accounting and increased the scalability of the product by automatically reviewing the signed lease agreement and initiating store payment procedures."
+                        "Maintained and implemented new features in a system that funded new leases",
+                        "Reduced ~100 hours of work per day for accounting and increased the scalability of the product by automatically reviewing the signed lease agreement and initiating store payment procedures"
                     ]
                 }
             ]
@@ -139,8 +139,8 @@
                 {
                     "title": "Centralized Logging",
                     "description": [
-                        "Built a syslog infrastructure using syslog-ng that would collect all of our systems logs and store them in a centralized and searchable location.",
-                        "Greatly improved the ability to debug our production applications by providing a one stop shop for all of our applications logs."
+                        "Built a syslog infrastructure using syslog-ng that would collect all of our systems logs and store them in a centralized and searchable location",
+                        "Greatly improved the ability to debug our production applications by providing a one-stop shop for all of our applications logs"
                     ]
                 }
             ]
@@ -174,6 +174,9 @@
         "CI/CD",
         "Object Oriented Programming",
         "Design Patterns",
-        "Functional Programming"
+        "Functional Programming",
+        "Docker",
+        "Kubernetes",
+        "Containers"
     ]
 }
