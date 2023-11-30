@@ -36,6 +36,21 @@
     ],
     "experience": [
         {
+            "company": "Invoice Cloud",
+            "position": "Sr. Software Engineer, SRE",
+            "date": "July 2023 - Present",
+            "projects": [
+                {
+                    "title": "SRE",
+                    "description": [
+                        "Created observability standards for the platform",
+                        "Implemented terraform modules to enable dev teams to easily set up monitoring and alerting in our observability backend",
+                        "Identified and remediated performance issues with redis"
+                    ]
+                }
+            ]
+        },
+        {
             "company": "Emmersion",
             "position": "Sr. Software Engineer",
             "date": "February 2023 - May 2023",
